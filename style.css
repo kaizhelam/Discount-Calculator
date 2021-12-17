@@ -1,0 +1,83 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    min-height: 100vh;
+    background: linear-gradient(#141E30, #243B55);
+    display: grid;
+    place-items: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 1.25rem;
+    width: 100%;
+}
+input {
+    margin: 1em 0;
+    padding: 0.5em 0.75em;
+    width: 100%;
+    background:none;
+    border: none;
+    border-bottom: 3px solid #141E30;
+    font-size: 15px;
+    font-weight: bold;
+}
+input:focus {
+    outline: none;
+    background: none;
+}
+select {
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em 0.75em;
+
+}
+button {
+    margin-top: 3rem;
+}
+.input-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    width: min(500px, 90%);
+    margin: 0 auto;
+    background: white;
+    padding: 1.5em 2em;
+}
+.calculate {
+    padding: 0.8em 0;
+    background: #141E30;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.calculate:hover {
+    opacity: 0.7;
+}
+.reset{
+    padding: 0.8em 0;
+    background: #243B55;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media (max-width: 450px) {
+    .input-item {
+        flex-direction: column;
+    }
+}
